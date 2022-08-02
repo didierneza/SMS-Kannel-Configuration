@@ -123,18 +123,23 @@ get-url = "http://127.0.0.1:5000/api/receivemessage?originator=%p&message=%a"
 group = sms-service
 keyword = default
 accepted-smsc = usb0-modem
-#//don't send a reply here (it'll come through sendsms):
+#don't send a reply here (it'll come through sendsms):
 max-messages = 0
-
 
 
 
 _*3. RESTART kannnel*_
 ----------------------
 
+sudo service restart kannel
+
 _*4. START bearerbox*_
--------------------
+-----------------------
+
+bearerbox
 
 _*5. START smsbox*_
 ----------------------
+
+smsbox
 
