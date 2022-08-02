@@ -123,7 +123,7 @@ get-url = "http://127.0.0.1:5000/api/receivemessage?originator=%p&message=%a"
 group = sms-service
 keyword = default
 accepted-smsc = usb0-modem
-# don't send a reply here (it'll come through sendsms):
+#//don't send a reply here (it'll come through sendsms):
 max-messages = 0
 
 
